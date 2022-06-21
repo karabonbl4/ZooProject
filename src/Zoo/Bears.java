@@ -29,9 +29,10 @@ public class Bears extends Animals {
         this.waterRate = waterRate;
     }
 
-    public int calculateDailyWaterVolume(Bears s) {
+    public int calculateDailyWaterVolume() {
         int dailyWaterVolume = 0;
         dailyWaterVolume += this.getWaterRate();
+        System.out.println(getName() + " need " + getWaterRate() + " water");
         return dailyWaterVolume;
     }
 }

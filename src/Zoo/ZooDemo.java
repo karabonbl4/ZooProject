@@ -19,9 +19,10 @@ public class ZooDemo {
 
 
         List<Animals> animalsList = new ArrayList<>();
-        animalsList.add(0, Panda);
-        animalsList.add(1, Nick);
-        animalsList.add(2, Misha);
+        animalsList.add(Panda);
+        animalsList.add(Nick);
+        animalsList.add(Misha);
 
+        Panda.calculateDailyWaterVolume();
     }
 }
