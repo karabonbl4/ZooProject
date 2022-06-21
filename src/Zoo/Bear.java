@@ -1,8 +1,6 @@
 package Zoo;
 
-import java.util.ArrayList;
-
-public class Bears extends Animals {
+public class Bear extends Animals {
 
     private int feedRate;
     private int waterRate;
@@ -23,16 +21,16 @@ public class Bears extends Animals {
         this.waterRate = waterRate;
     }
 
-    public Bears(String name, int age, String patron, int feedRate, int waterRate) {
-        super(name, age, patron);
+    public Bear(String name, int age, String patron, int power, int feedRate, int waterRate) {
+        super(name, age, patron, power);
         this.feedRate = feedRate;
         this.waterRate = waterRate;
     }
 
-    public int calculateDailyWaterVolume() {
-        int dailyWaterVolume = 0;
-        dailyWaterVolume += this.getWaterRate();
+    public int printDailyWaterVolume() {
+        int dailyWaterVolume = this.getWaterRate();
         System.out.println(getName() + " need " + getWaterRate() + " water");
         return dailyWaterVolume;
     }
+
 }
