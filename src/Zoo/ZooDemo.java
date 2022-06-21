@@ -13,16 +13,16 @@ public class ZooDemo {
 
     public static void main(String[] args) {
 
-        Bears Panda = new Bears("Panda", 3, "AndreyS", 3000, 2000);
-        Bears Nick = new Bears("Nick", 6, "AndreyS", 6000, 5000);
-        Bears Misha = new Bears("Misha", 10, "AndreyS", 8000, 7000);
+        Bear Masha = new Bear("Masha", 3, "AndreyS", 8, 3000, 2000);
+        Bear Nick = new Bear("Nick", 6, "AndreyS", 7,6000, 5000);
+        Bear Misha = new Bear("Misha", 10, "AndreyS", 9,8000, 6000);
 
 
         List<Animals> animalsList = new ArrayList<>();
-        animalsList.add(Panda);
+        animalsList.add(Masha);
         animalsList.add(Nick);
         animalsList.add(Misha);
 
-        Panda.calculateDailyWaterVolume();
+        Masha.printDailyWaterVolume();
     }
 }
