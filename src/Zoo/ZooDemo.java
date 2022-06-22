@@ -24,5 +24,6 @@ public class ZooDemo {
         animalsList.add(Misha);
 
         Masha.printDailyWaterVolume();
+
     }
 }
