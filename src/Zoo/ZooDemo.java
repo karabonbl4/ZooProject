@@ -18,22 +18,23 @@ public class ZooDemo {
         Bear bearNick = new Bear("Nick", 6, "AndreyS", 7, 6000, 5000);
         Bear bearMisha = new Bear("Misha", 10, "AndreyS", 9, 8000, 6000);
 
+        Fox foxOleg = new Fox("Oleg", 3, "Lesha", 3);
+        Fox foxSergey = new Fox("Sergey", 6, "Lesha", 5);
+        Fox foxNatasha = new Fox("Natasha", 2, "Lesha", 2);
+        Fox foxLiza = new Fox("Liza", 4, "Lesha", 4);
 
         List<Animals> animalsList = new ArrayList<>();
         animalsList.add(bearMasha);
         animalsList.add(bearNick);
-        animalsList.add(earMisha);
+        animalsList.add(bearMisha);
         animalsList.add(foxOleg);
         animalsList.add(foxSergey);
         animalsList.add(foxNatasha);
         animalsList.add(foxLiza);
 
-        Masha.printDailyWaterVolume();
+        bearMasha.printDailyWaterVolume();
 
-        Fox foxOleg = new Fox("Oleg", 3, "Lesha", 3);
-        Fox foxSergey = new Fox("Sergey", 6, "Lesha", 5);
-        Fox foxNatasha = new Fox("Natasha", 2, "Lesha", 2);
-        Fox foxLiza = new Fox("Liza", 4, "Lesha", 4);
+
 
         foxOleg.setGender("M");
         foxSergey.setGender("M");
