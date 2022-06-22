@@ -1,5 +1,6 @@
 package Zoo;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,6 +25,23 @@ public class ZooDemo {
         animalsList.add(Misha);
 
         Masha.printDailyWaterVolume();
+
+        Fox foxOleg = new Fox("Oleg", 3, "Lesha", 3);
+        Fox foxSergey = new Fox("Sergey", 6, "Lesha", 5);
+        Fox foxNatasha = new Fox("Natasha", 2, "Lesha", 2);
+        Fox foxLiza = new Fox("Liza", 4, "Lesha", 4);
+        foxOleg.setGender("M");
+        foxSergey.setGender("M");
+        foxNatasha.setGender("W");
+        foxLiza.setGender("W");
+        List<Animals> foxes = new ArrayList<>();
+        foxes.add(foxOleg);
+        foxes.add(foxSergey);
+        foxes.add(foxNatasha);
+        foxes.add(foxLiza);
+
+        foxOleg.findPartner(animalsList);
+        foxOleg.findPartner(foxes);
 
     }
 }
