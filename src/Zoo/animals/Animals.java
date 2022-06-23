@@ -8,7 +8,7 @@ package Zoo.animals;
  * For example: 1 - for weak animal (hare, hamster, hedgehog), 10 - for strong animal (bear, wolf, lion).
  * **/
 
-public abstract class Animals implements Feed {
+public abstract class Animals implements Feed,Reproduce {
 
     private String name;
     private int age;

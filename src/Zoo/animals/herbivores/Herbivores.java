@@ -4,12 +4,14 @@ import Zoo.animals.Animals;
 
 public abstract class Herbivores extends Animals implements Defend {
 
-    private Herbivores[] herbivores;
+//    private Herbivores[] herbivores; //for overriding method Reproduce
 
     private int speedOfRun;
 
-    public Herbivores(String name) {
+    public Herbivores(String name, int speedOfRun) {
         super(name);
+        this.speedOfRun = speedOfRun;
+
     }
 
 

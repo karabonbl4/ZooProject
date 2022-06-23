@@ -1,20 +1,13 @@
 package Zoo.animals.herbivores;
 
+import Zoo.animals.Animals;
+
 public class Giraffe extends Herbivores{
 
-    private final int portionFeed;
 
-    public Giraffe(String name, int portionFeed) {
-        super(name);
-        this.portionFeed = portionFeed;
+    public Giraffe(String name, int speedOfRun) {
+        super(name, speedOfRun);
     }
-
-    public int getPortionFeed() {
-        return portionFeed;
-    }
-
-
-
 
     @Override
     public void selfDefend() {
@@ -24,5 +17,10 @@ public class Giraffe extends Herbivores{
     @Override
     public int getDailyPortionFeed() {
         return 0;
+    }
+
+    @Override
+    public void findPartnerForOffspring(Animals[] animals) {
+
     }
 }
