@@ -1,9 +1,15 @@
-package Zoo;
+package Zoo.animals.predators;
 
-public class Bear extends Animals {
+import Zoo.animals.predators.Predators;
+
+public class Bear extends Predators {
 
     private int feedRate;
     private int waterRate;
+
+    public Bear(String name) {
+        super(name);
+    }
 
     public int getFeedRate() {
         return feedRate;
@@ -21,11 +27,11 @@ public class Bear extends Animals {
         this.waterRate = waterRate;
     }
 
-    public Bear(String name, int age, String patron, int power, int feedRate, int waterRate) {
-        super(name, age, patron, power);
-        this.feedRate = feedRate;
-        this.waterRate = waterRate;
-    }
+//    public Bear(String name, int age, String patron, int power, int feedRate, int waterRate) {
+//        super(name, age, patron, power);
+//        this.feedRate = feedRate;
+//        this.waterRate = waterRate;
+//    }
 
     public int printDailyWaterVolume() {
         int dailyWaterVolume = this.getWaterRate();
@@ -33,4 +39,8 @@ public class Bear extends Animals {
         return dailyWaterVolume;
     }
 
+    @Override
+    public int getDailyPortionFeed() {
+        return 0;
+    }
 }

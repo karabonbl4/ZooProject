@@ -1,6 +1,4 @@
-package Zoo;
-
-import java.util.List;
+package Zoo.animals;
 
 /** Create your animals class from this abstract class.
  * Patron - this is the name of the class creator. Please insert your name in this field.
@@ -10,13 +8,15 @@ import java.util.List;
  * For example: 1 - for weak animal (hare, hamster, hedgehog), 10 - for strong animal (bear, wolf, lion).
  * **/
 
-public abstract class Animals {
+public abstract class Animals implements Feed {
 
     private String name;
     private int age;
-    private String patron;
-    private int power;
+    private String type;
     private String gender;
+    private int feedRate;
+    private int waterRate;
+
 
     public String getName() {
         return name;
@@ -34,22 +34,6 @@ public abstract class Animals {
         this.age = age;
     }
 
-    public String getPatron() {
-        return patron;
-    }
-
-    public void setPatron(String patron) {
-        this.patron = patron;
-    }
-
-    public int getPower() {
-        return power;
-    }
-
-    public void setPower(int power) {
-        this.power = power;
-    }
-
     public String getGender() {
         return gender;
     }
@@ -58,13 +42,35 @@ public abstract class Animals {
         this.gender = gender;
     }
 
-    public Animals(String name, int age, String patron, int power) {
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public int getFeedRate() {
+        return feedRate;
+    }
+
+    public void setFeedRate(int feedRate) {
+        this.feedRate = feedRate;
+    }
+
+    public int getWaterRate() {
+        return waterRate;
+    }
+
+    public void setWaterRate(int waterRate) {
+        this.waterRate = waterRate;
+    }
+
+    public Animals(String name) {
         this.name = name;
-        this.age = age;
-        this.patron = patron;
-        this.power = power;
 
     }
+
 
     @Override
     public String toString() {

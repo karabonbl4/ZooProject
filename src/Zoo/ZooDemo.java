@@ -1,6 +1,9 @@
 package Zoo;
 
-import java.lang.reflect.Array;
+import Zoo.animals.Animals;
+import Zoo.animals.predators.Bear;
+import Zoo.animals.predators.Fox;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,17 +17,19 @@ public class ZooDemo {
 
     public static void main(String[] args) {
 
-        Bear bearMasha = new Bear("bearMasha", 3, "AndreyS", 8, 3000, 2000);
-        Bear bearNick = new Bear("bearNick", 6, "AndreyS", 7,6000, 5000);
-        Bear bearMisha = new Bear("bearMisha", 10, "AndreyS", 9,8000, 6000);
-        Fox foxOleg = new Fox("Oleg", 3, "Lesha", 3);
-        Fox foxSergey = new Fox("Sergey", 6, "Lesha", 5);
-        Fox foxNatasha = new Fox("Natasha", 2, "Lesha", 2);
-        Fox foxLiza = new Fox("Liza", 4, "Lesha", 4);
+        Bear bearMasha = new Bear("Masha");
+        Bear bearNick = new Bear("Nick");
+        Bear bearMisha = new Bear("Misha");
+        Fox foxOleg = new Fox("Oleg");
+        Fox foxSergey = new Fox("Sergey");
+        Fox foxNatasha = new Fox("Natasha");
+        Fox foxLiza = new Fox("Liza");
         foxOleg.setGender("M");
         foxSergey.setGender("M");
-        foxNatasha.setGender("W");
-        foxLiza.setGender("W");
+        foxNatasha.setGender("F");
+        foxLiza.setGender("F");
+
+
 
         List<Animals> animalsList = new ArrayList<>();
         animalsList.add(bearMasha);
@@ -37,11 +42,6 @@ public class ZooDemo {
 
         bearMasha.printDailyWaterVolume();
         foxOleg.findPartner(animalsList);
-
-
-
-
-
 
 
 

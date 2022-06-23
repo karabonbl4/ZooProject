@@ -1,18 +1,18 @@
-package Zoo;
+package Zoo.animals.predators;
 
-import java.util.ArrayList;
-import java.util.Collection;
+import Zoo.animals.Animals;
+import Zoo.animals.predators.Predators;
+
 import java.util.List;
 
-public class Fox extends Animals{
+public class Fox extends Predators {
     private int feedRate;
     private int waterRate;
     private int agility;
     private int intelligence;
 
-
-    public Fox(String name, int age, String patron, int power) {
-        super(name, age, patron, power);
+    public Fox(String name) {
+        super(name);
     }
 
     public int getFeedRate() {
@@ -61,4 +61,8 @@ public class Fox extends Animals{
     }
 
 
+    @Override
+    public int getDailyPortionFeed() {
+        return 0;
+    }
 }
