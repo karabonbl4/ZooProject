@@ -14,18 +14,9 @@ public class ZooDemo {
 
     public static void main(String[] args) {
 
-        Bear Masha = new Bear("Masha", 3, "AndreyS", 8, 3000, 2000);
-        Bear Nick = new Bear("Nick", 6, "AndreyS", 7,6000, 5000);
-        Bear Misha = new Bear("Misha", 10, "AndreyS", 9,8000, 6000);
-
-
-        List<Animals> animalsList = new ArrayList<>();
-        animalsList.add(Masha);
-        animalsList.add(Nick);
-        animalsList.add(Misha);
-
-        Masha.printDailyWaterVolume();
-
+        Bear bearMasha = new Bear("bearMasha", 3, "AndreyS", 8, 3000, 2000);
+        Bear bearNick = new Bear("bearNick", 6, "AndreyS", 7,6000, 5000);
+        Bear bearMisha = new Bear("bearMisha", 10, "AndreyS", 9,8000, 6000);
         Fox foxOleg = new Fox("Oleg", 3, "Lesha", 3);
         Fox foxSergey = new Fox("Sergey", 6, "Lesha", 5);
         Fox foxNatasha = new Fox("Natasha", 2, "Lesha", 2);
@@ -34,14 +25,25 @@ public class ZooDemo {
         foxSergey.setGender("M");
         foxNatasha.setGender("W");
         foxLiza.setGender("W");
-        List<Animals> foxes = new ArrayList<>();
-        foxes.add(foxOleg);
-        foxes.add(foxSergey);
-        foxes.add(foxNatasha);
-        foxes.add(foxLiza);
 
+        List<Animals> animalsList = new ArrayList<>();
+        animalsList.add(bearMasha);
+        animalsList.add(bearNick);
+        animalsList.add(bearMisha);
+        animalsList.add(foxOleg);
+        animalsList.add(foxSergey);
+        animalsList.add(foxNatasha);
+        animalsList.add(foxLiza);
+
+        bearMasha.printDailyWaterVolume();
         foxOleg.findPartner(animalsList);
-        foxOleg.findPartner(foxes);
+
+
+
+
+
+
+
 
     }
 }
