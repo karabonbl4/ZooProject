@@ -2,6 +2,6 @@ package Zoo.animals;
 
 public interface Feed {
 
-     int getDailyPortionFeed();
+    void feed(int feedRate);
 
 }

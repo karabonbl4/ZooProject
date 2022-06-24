@@ -7,11 +7,12 @@ import Zoo.animals.predators.Fox;
 import java.util.ArrayList;
 import java.util.List;
 
-/** Create 3 objects from your class.
+/**
+ * Create 3 objects from your class.
  * Add yours objects in ArrayList.
  * Create any method to works with objects.
  * Update others methods for work with yours objects.
- * **/
+ **/
 
 public class ZooDemo {
 
@@ -30,7 +31,6 @@ public class ZooDemo {
         foxLiza.setGender("F");
 
 
-
         List<Animals> animalsList = new ArrayList<>();
         animalsList.add(bearMasha);
         animalsList.add(bearNick);
@@ -39,10 +39,6 @@ public class ZooDemo {
         animalsList.add(foxSergey);
         animalsList.add(foxNatasha);
         animalsList.add(foxLiza);
-
-        bearMasha.printDailyWaterVolume();
-        foxOleg.findPartner(animalsList);
-
 
 
     }

@@ -1,6 +1,8 @@
 package Zoo.animals;
 
+import java.util.List;
+
 public interface Reproduce {
 
-    void findPartnerForOffspring(Animals[] animals);
+    void findPartnerForOffspring(List<Animals> animals);
 }

@@ -4,14 +4,28 @@ import Zoo.animals.Animals;
 
 public abstract class Herbivores extends Animals implements Defend {
 
-//    private Herbivores[] herbivores; //for overriding method Reproduce
+    private int speedOfRun;           //when predator attack, herbivores have to run away (for example)
+    private int weight;                     //count portionFeed for predators
 
-    private int speedOfRun;
-
-    public Herbivores(String name, int speedOfRun) {
+    public Herbivores(String name) {
         super(name);
-        this.speedOfRun = speedOfRun;
+    }
 
+
+    public int getSpeedOfRun() {
+        return speedOfRun;
+    }
+
+    public int getWeight() {
+        return weight;
+    }
+
+    public void setSpeedOfRun(int speedOfRun) {
+        this.speedOfRun = speedOfRun;
+    }
+
+    public void setWeight(int weight) {
+        this.weight = weight;
     }
 
 
@@ -19,4 +33,6 @@ public abstract class Herbivores extends Animals implements Defend {
     public void selfDefend() {
         System.out.println(this.getName() + " run...run...run");
     }
+
+
 }
