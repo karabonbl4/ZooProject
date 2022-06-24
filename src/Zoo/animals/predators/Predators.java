@@ -15,10 +15,10 @@ public abstract class Predators extends Animals implements Attack {
         this.power = power;
     }
 
-    public Predators(String name) {
-        super(name);
+    public Predators(String name, int age, String gender, int feedPortion, int power) {
+        super(name, age, gender, feedPortion);
+        this.power = power;
     }
-
 
     @Override
     public void attackEnemy(Animals animal) {

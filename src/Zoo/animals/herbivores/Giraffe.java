@@ -3,9 +3,8 @@ package Zoo.animals.herbivores;
 
 public class Giraffe extends Herbivores {
 
-
-    public Giraffe(String name) {
-        super(name);
+    public Giraffe(String name, int age, String gender, int feedPortion, int speedOfRun, int weight) {
+        super(name, age, gender, feedPortion, speedOfRun, weight);
     }
 
     @Override

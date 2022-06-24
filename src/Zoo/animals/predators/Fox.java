@@ -7,9 +7,7 @@ import java.util.List;
 
 public class Fox extends Predators {
 
-    public Fox(String name) {
-        super(name);
+    public Fox(String name, int age, String gender, int feedPortion, int power) {
+        super(name, age, gender, feedPortion, power);
     }
-
-
 }
