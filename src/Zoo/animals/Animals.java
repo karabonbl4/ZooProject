@@ -64,7 +64,7 @@ public abstract class Animals implements Feed, Reproduce {
         if (diff > 0) {
             System.out.printf("%s need another %s of food\n", this.getName(), diff);
         } else {
-            System.out.printf("%s is full and happy! Some food %s left...\n", this.getName(), diff);
+            System.out.printf("%s is full and happy! Some food (%s kg) left...\n", this.getName(), Math.abs(diff));
         }
     }
 
@@ -72,11 +72,11 @@ public abstract class Animals implements Feed, Reproduce {
     public void findPartnerForOffspring(List<Animals> animals) {
         for (Animals animal : animals) {
             if (!this.getGender().equals(animal.getGender()) && this.getClass().equals(animal.getClass())) {
-                System.out.printf("%s and %s could give offspring.\n", this.getName(), animal.getName());
+                System.out.printf("%s %s and %s %s could give offspring.\n",this.getClass().getSimpleName(), this.getName(), animal.getClass().getSimpleName(), animal.getName());
             } else if (this.getGender().equals(animal.getGender()) && this.getClass().equals(animal.getClass())) {
-                System.out.printf("%s and %s could be friends.\n", this.getName(), animal.getName());
+                System.out.printf("%s %s and %s %s could be friends.\n",this.getClass().getSimpleName(), this.getName(), animal.getClass().getSimpleName(), animal.getName());
             } else {
-                System.out.printf("%s and %s belong to different animal species, they can't have offspring.\n", this.getName(), animal.getName());
+                System.out.printf("%s %s and %s %s belong to different animal species, they can't have offspring.\n",this.getClass().getSimpleName(), this.getName(), animal.getClass().getSimpleName(), animal.getName());
             }
         }
     }

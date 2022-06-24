@@ -22,6 +22,7 @@ public abstract class Predators extends Animals implements Attack {
 
     @Override
     public void attackEnemy(Animals animal) {
+        System.out.println(this.getName() + " want to attack");
         if (animal instanceof Herbivores) {
             ((Herbivores) animal).selfDefend();
             if (this.getPower() < ((Herbivores) animal).getSpeedOfRun()) {

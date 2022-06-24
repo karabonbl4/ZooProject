@@ -8,6 +8,6 @@ public class Rabit extends Herbivores{
 
     @Override
     public void selfDefend() {
-        System.out.println(this.getName() + " running away.");
+        System.out.println(this.getName() + " is running away.");
     }
 }
