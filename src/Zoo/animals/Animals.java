@@ -51,8 +51,11 @@ public abstract class Animals implements Feed, Reproduce {
         this.feedPortion = feedPortion;
     }
 
-    public Animals(String name) {
+    public Animals(String name, int age, String gender, int feedPortion) {
         this.name = name;
+        this.age = age;
+        this.gender = gender;
+        this.feedPortion = feedPortion;
     }
 
     @Override
@@ -61,7 +64,7 @@ public abstract class Animals implements Feed, Reproduce {
         if (diff > 0) {
             System.out.printf("%s need another %s of food\n", this.getName(), diff);
         } else {
-            System.out.printf("%s is full and happy! Some food left...\n", this.getName(), diff);
+            System.out.printf("%s is full and happy! Some food %s left...\n", this.getName(), diff);
         }
     }
 
