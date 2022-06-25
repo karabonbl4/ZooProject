@@ -1,8 +1,8 @@
 package Zoo.animals.herbivores;
 
-public class Rabit extends Herbivores{
+public class Rabbit extends Herbivores{
 
-    public Rabit(String name, int age, String gender, int feedPortion, int speedOfRun, int weight) {
+    public Rabbit(String name, int age, String gender, int feedPortion, int speedOfRun, int weight) {
         super(name, age, gender, feedPortion, speedOfRun, weight);
     }
 

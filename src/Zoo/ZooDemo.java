@@ -4,8 +4,9 @@ import Zoo.animals.Animals;
 import Zoo.animals.herbivores.Camel;
 import Zoo.animals.herbivores.Elephant;
 import Zoo.animals.herbivores.Giraffe;
-import Zoo.animals.herbivores.Rabit;
+import Zoo.animals.herbivores.Rabbit;
 import Zoo.animals.predators.Bear;
+import Zoo.animals.predators.Chimera;
 import Zoo.animals.predators.Fox;
 
 import java.util.ArrayList;
@@ -32,8 +33,9 @@ public class ZooDemo {
         Elephant elephantKatty = new Elephant("Katty", 11, "F", 8, 35, 2100);
         Giraffe giraffeAnton = new Giraffe("Anton", 12, "M", 8, 50, 1800);
         Giraffe giraffeMilena = new Giraffe("Milena", 7, "F", 6, 45, 1400);
-        Rabit rabitPiter = new Rabit("Piter", 3, "M", 1, 60, 5);
-        Rabit rabitSonya = new Rabit("Sonya", 2, "F", 1, 60, 4);
+        Rabbit rabbitPiter = new Rabbit("Piter", 3, "M", 1, 60, 5);
+        Rabbit rabbitSonya = new Rabbit("Sonya", 2, "F", 1, 60, 4);
+        Chimera chimeraChimera = new Chimera("Chimera", 0, "unknown", 10000, 100);
 
 
         List<Animals> animalsList = new ArrayList<>();
@@ -47,14 +49,21 @@ public class ZooDemo {
         animalsList.add(elephantKatty);
         animalsList.add(giraffeAnton);
         animalsList.add(giraffeMilena);
-        animalsList.add(rabitPiter);
-        animalsList.add(rabitSonya);
+        animalsList.add(rabbitSonya);
+        animalsList.add(rabbitSonya);
 
 
-        bearNick.attackEnemy(foxLiza);
-        giraffeAnton.feed(20);
-        foxSergey.attackEnemy(rabitPiter);
-        rabitPiter.findPartnerForOffspring(animalsList);
+//        bearNick.attackEnemy(foxLiza);
+//        System.out.println("");
+//        foxSergey.attackEnemy(rabbitPiter);
+//        System.out.println("");
+//        giraffeAnton.feed(20);
+//        System.out.println("");
+//        rabbitPiter.findPartnerForOffspring(animalsList);
+//        System.out.println("");
+        chimeraChimera.projectChimeraLaunch(bearNick, animalsList);
+        chimeraChimera.attackingAnimals(animalsList); //думаю переписать. запускать при создании Химеры.
+
 
 
     }
